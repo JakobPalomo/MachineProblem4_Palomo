@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EEF5FF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -22,7 +23,8 @@
             android:id="@+id/txtUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username" />
+            android:text="Username"
+            android:textColor="#A25772" />
 
         <EditText
             android:id="@+id/edtUsername"
@@ -30,20 +32,23 @@
             android:layout_height="wrap_content"
             android:ems="0"
             android:inputType="text"
-            android:text="" />
+            android:text=""
+            android:textColor="#242424" />
 
         <TextView
             android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password" />
+            android:text="Password"
+            android:textColor="#A25772" />
 
         <EditText
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="#242424" />
 
     </LinearLayout>
 
@@ -52,7 +57,9 @@
         android:layout_width="161dp"
         android:layout_height="63dp"
         android:layout_marginTop="28dp"
+        android:backgroundTint="#A25772"
         android:text="Login"
+        android:textColor="#FFFFFF"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +72,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Employee Database"
+        android:textColor="#A25772"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
