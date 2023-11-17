@@ -42,11 +42,9 @@ class EmployeeAdapter(private val employeeList: List<Employee>, private val cont
         holder.department.text = currentItem.department
 
         holder.itemView.setOnClickListener {
-            val clickedEmployee = employeeList[position]
-//            val intent = Intent(context, EmpDetailsUser::class.java).apply {
-//                putExtra("User", clickedEmployee)
-//            }
-//            context.startActivity(intent)
+            val intent = Intent(context, EmpDetailsUser::class.java)
+            intent.putExtra("User", currentItem.name)
+            context.startActivity(intent)
         }
     }
 
